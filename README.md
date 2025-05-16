@@ -2,7 +2,7 @@
 
 Index:
 <ul>
-    <li><a href="https://mechref.org/about/docs">Guide on custom components and their options</a></li>
+    <li><a href="https://blankref.org/about/docs">Guide on custom components and their options</a></li>
     <li>
         To run the pages locally, refer to the guide for your specific Operating System:
         <ul>
@@ -20,7 +20,7 @@ Index:
 
 ### Installing required programs
 
-Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the Mechref repository. Once logged in clone the Mechref repository.
+Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the Blankref repository. Once logged in clone the Blankref repository.
 
 Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>. By default, the installer should also install Node Package Manager/NPM, but double check that is the case.
 
@@ -28,9 +28,9 @@ Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>.
 
 Open the Windows command prompt (Windows key + R and type in `cmd`, or type in `cmd` in the search menu.) Make sure it is not ran as administrator, such that the first line reads `C:\Users\<user>`, where `<user>` is the username of the current Windows user.
 
-By default, the repository should be at `C:\Users\<user>\Documents\GitHub\mechref`. Run the command 
+By default, the repository should be at `C:\Users\<user>\Documents\GitHub\blankref`. Run the command 
 ```
-cd Documents\GitHub\mechref
+cd Documents\GitHub\blankref
 ```
 You should now see that the beginning of the line reads the correct location referenced previously. 
 
@@ -72,7 +72,7 @@ sudo sh -c 'echo -e "[shiftkey-packages]\nname=GitHub Desktop\nbaseurl=https://r
 ```
 sudo dnf install github-desktop
 ```
- Once installed, login using the GitHub account with which you have collaborator access to the Mechref repository. Once logged in clone the Mechref repository.
+ Once installed, login using the GitHub account with which you have collaborator access to the Blankref repository. Once logged in clone the Blankref repository.
 
 Download NodeJS by running 
 ```
@@ -92,7 +92,7 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-package
 ```
 sudo apt update && sudo apt install github-desktop
 ```
-Once installed, login using the GitHub account with which you have collaborator access to the Mechref repository. Once logged in clone the Mechref repository.
+Once installed, login using the GitHub account with which you have collaborator access to the Blankref repository. Once logged in clone the Blankref repository.
 
 Download NodeJS by running 
 ```
@@ -108,11 +108,11 @@ to also install Node Package Manager/NPM.
 
 Open your terminal and go to the correct directory with 
 ```
-cd ~/Documents/GitHub/mechref
+cd ~/Documents/GitHub/blankref
 ``` 
 or 
 ```
-cd $HOME/Documents/GitHub/mechref
+cd $HOME/Documents/GitHub/blankref
 ```
 <u>Note</u>: this is the default location for the mechref repository. If you changed the default location when installing GitHub desktop, these commands won't work. Instead, use the location you chose.
 
@@ -124,7 +124,7 @@ npm install
 <u>Optional</u>:
 For easy access, consider creating a symbolic link in your home directory by running:
 ```
-ln -s $HOME/Documents/GitHub/mechref ./mechref
+ln -s $HOME/Documents/GitHub/blankref ./blankref
 ```
 
 Now, everytime you launch the terminal, you should be able to access the correct directory with 
@@ -148,7 +148,7 @@ To stop the application, close the terminal window or run `Ctrl + C`.
 
 ### Installing required programs
 
-Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the Mechref repository. Once logged in clone the Mechref repository.
+Download <a href="https://github.com/apps/desktop">GitHub Desktop</a>. Once installed, login using the GitHub account with which you have collaborator access to the Blankref repository. Once logged in clone the Blankref repository.
 
 Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>. By default, the installer should also install Node Package Manager/NPM, but double check that is the case.
 
@@ -156,11 +156,11 @@ Download <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a>.
 
 Open your terminal and go to the correct directory with 
 ```
-cd ~/Documents/GitHub/mechref
+cd ~/Documents/GitHub/blankref
 ``` 
 or 
 ```
-cd $HOME/Documents/GitHub/mechref
+cd $HOME/Documents/GitHub/blankref
 ```
 <u>Note</u>: this is the default location for the mechref repository. If you changed the default location when installing GitHub desktop, these commands won't work. Instead, use the location you chose.
 
@@ -172,7 +172,7 @@ npm install
 <u>Optional</u>:
 For easy access, consider creating a symbolic link in your home directory by running:
 ```
-ln -s $HOME/Documents/GitHub/mechref ./mechref
+ln -s $HOME/Documents/GitHub/blankref ./blankref
 ```
 
 Now, everytime you launch the terminal, you should be able to access the correct directory with 
