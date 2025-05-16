@@ -1,6 +1,4 @@
-# Mechref
-
-Currently, the website is hosted at <a href="https://mechref.org">https://mechref.org</a>. 
+# BlankRef
 
 Index:
 <ul>
