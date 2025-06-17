@@ -63,10 +63,7 @@ import search_contents from "../search.json"
       <div class="input-group-prepend">
         <select name="course-selector" id="course-selector" class="form-select">
           <option value="all">All courses</option>
-          <option value="sta">Statics</option>
-          <option value="dyn">Dynamics</option>
-          <option value="sol">Solid Mechanics</option>
-          <option value="thermodynamics">Thermodynamics</option>
+
         </select>
       </div>
       <i class="bi bi-x" id="clear" onclick="searchbox.blur();"></i>
@@ -2213,22 +2210,12 @@ import search_contents from "../search.json"
         if (document.querySelector('body').clientWidth <= 768){
           course_selector.innerHTML = `
           <option value="all">All courses</option>
-          <option value="sta">Statics</option>
-          <option value="dyn">Dynamics</option>
-          <option value="sol">Sol. Mech.</option>
-          <option value="thermodynamics">Thermo.</option>
-          <option value="md">Mech. Design</option>
-          <option value="mf">Mach. Failure</option>
+
           `;
         }else{
           course_selector.innerHTML = `
           <option value="all">All courses</option>
-          <option value="sta">Statics</option>
-          <option value="dyn">Dynamics</option>
-          <option value="sol">Solid Mechanics</option>
-          <option value="thermodynamics">Thermodynamics</option>
-          <option value="md">Mechanical design</option>
-          <option value="mf">Machine failure</option>
+
           `;
         }
     }
