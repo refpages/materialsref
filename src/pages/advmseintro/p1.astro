@@ -1,32 +1,88 @@
 ---
-import Layout from "../../layouts/Layout.astro" 
-import Image from "../../components/Image.astro" 
-import CalloutContainer from "../../components/CalloutContainer.astro" 
-import Section from "../../components/Section.astro" 
-import SubSection from "../../components/SubSection.astro" 
-import SubSubSection from "../../components/SubSubSection.astro" 
-import SubSubSubSection from "../../components/SubSubSubSection.astro" 
-import OrangeText from "../../components/OrangeText.astro" 
-import TealText from "../../components/TealText.astro" 
-import Enumerate from "../../components/Enumerate.astro" 
-import Item from "../../components/Item.astro" 
-import Itemize from "../../components/Itemize.astro" 
-import InlineEquation from "../../components/InlineEquation.astro" 
-import DisplayEquation from "../../components/DisplayEquation.astro" 
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/Section.astro";
+import SubSection from "../../components/SubSection.astro";
+import Itemize from "../../components/Itemize.astro";
+import Item from "../../components/Item.astro";
+import InlineEquation from "../../components/InlineEquation.astro";
 ---
-<Layout title="1_Bonding">
-<div slot="navtree">
-<ul class="list-group list-group-flush py-0">
-</li>
-</ul>
-</div>
-<p>\documentclass[12pt]{article}</p>
-<p>\geometry{margin=1in}</p>
-<p>\setstretch{1.2}</p>
-<p>\begin{center}</p>
-<p>\textbf{\LARGE MSE 280}\\[1em]</p>
-<p>\textbf{\Large Bonding}</p>
-<p>\end{center}</p>
 
+<Layout title="Bonding">
+    <div slot="navtree">
+        <ul class="list-group list-group-flush py-0">
+            <li class="list-group-item py-0">
+                <a class="text-decoration-none subsection" href="#ionic-bonding">Ionic Bonding</a>
+            </li>
+            <li class="list-group-item py-0">
+                <a class="text-decoration-none subsection" href="#covalent-bonding">Covalent Bonding</a>
+            </li>
+            <li class="list-group-item py-0">
+                <a class="text-decoration-none subsection" href="#metallic-bonding">Metallic Bonding</a>
+            </li>
+            <li class="list-group-item py-0">
+                <a class="text-decoration-none subsection" href="#secondary-bonds">Secondary Bonds</a>
+            </li>
+            <li class="list-group-item py-0">
+                <a class="text-decoration-none subsection" href="#exercise">Exercise</a>
+            </li>
+        </ul>
+    </div>
 
+    <Section id="main-section" title="Bonding">
+        <p>
+            In solids, three primary (chemical) bond types are most common: ionic, covalent, and metallic.
+            The dominant bond type depends on how valence electrons are transferred, shared, or delocalized
+            among atoms.
+        </p>
+        <p>
+            Secondary interactions also exist in many materials. Even though these forces are weaker than
+            primary bonds, they still influence key properties such as melting behavior, stiffness, and
+            thermal response.
+        </p>
+    </Section>
+
+    <SubSection id="ionic-bonding" title="Ionic Bonding">
+        <p>
+            Ionic bonding is common in compounds containing metallic and nonmetallic elements.
+            A metallic atom tends to donate valence electron(s), while a nonmetal accepts them, producing
+            oppositely charged ions that attract each other electrostatically.
+        </p>
+    </SubSection>
+
+    <SubSection id="covalent-bonding" title="Covalent Bonding">
+        <p>
+            Covalent bonding occurs when atoms share valence electrons. This is typical when atoms have
+            relatively small electronegativity differences and neither atom fully transfers electrons to the
+            other.
+        </p>
+    </SubSection>
+
+    <SubSection id="metallic-bonding" title="Metallic Bonding">
+        <p>
+            In metallic bonding, valence electrons are not tied to one specific atom. Instead, electrons are
+            delocalized across many atoms, forming an electron "sea" that contributes to conductivity and
+            ductility in metals and alloys.
+        </p>
+    </SubSection>
+
+    <SubSection id="secondary-bonds" title="Secondary Bonds (Van der Waals)">
+        <p>
+            Secondary bonds are weaker interactions present in many atomic and molecular systems.
+            Although weaker than ionic/covalent/metallic bonds, they can strongly affect material behavior
+            when primary bonding is limited or when molecular structures dominate.
+        </p>
+    </SubSection>
+
+    <SubSection id="exercise" title="Exercise">
+        <p>Using the periodic table, identify the dominant bonding type for each material below.</p>
+        <Itemize>
+            <Item>Brass (copper-zinc alloy)</Item>
+            <Item>Rubber</Item>
+            <Item>Calcium fluoride (CaF<InlineEquation equation="_2" />)</Item>
+            <Item>Bronze</Item>
+            <Item>Solid xenon</Item>
+            <Item>Tungsten</Item>
+            <Item>Cadmium telluride (CdTe)</Item>
+        </Itemize>
+    </SubSection>
 </Layout>
