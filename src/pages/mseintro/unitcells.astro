@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro" 
+import Image from "../../components/Image.astro" 
+import CalloutContainer from "../../components/CalloutContainer.astro" 
+import Section from "../../components/Section.astro" 
+import SubSection from "../../components/SubSection.astro" 
+import SubSubSection from "../../components/SubSubSection.astro" 
+import SubSubSubSection from "../../components/SubSubSubSection.astro" 
+import OrangeText from "../../components/OrangeText.astro" 
+import TealText from "../../components/TealText.astro" 
+import Enumerate from "../../components/Enumerate.astro" 
+import Item from "../../components/Item.astro" 
+import Itemize from "../../components/Itemize.astro" 
+import InlineEquation from "../../components/InlineEquation.astro" 
+import DisplayEquation from "../../components/DisplayEquation.astro" 
+---
+<Layout title="2_UnitCells">
+<div slot="navtree">
+<ul class="list-group list-group-flush py-0">
+</li>
+</ul>
+</div>
+<p>\documentclass[12pt]{article}</p>
+<p>\geometry{margin=1in}</p>
+<p>\setstretch{1.2}</p>
+<p>\begin{center}</p>
+<p>\textbf{\LARGE MSE 280}\</p>
+<DisplayEquation equation="1em] \\textbf{\\Large Unit Cells} \\end{center} Previously in this class we learned about the type of crystal structure called simple cubic. This is one of a few types of structures. This worksheet will go over 2 more structures called body centered cubic (BCC) and face centered cubic (FCC). The face-centered cubic cell is a crystal structure found in many metals. This structure has atoms located at each of the corners of the cube as well as on the center of each face of the cube. This can be seen in the figure below. In this figure the atom centers are represented by small red spheres. The equation that relates the cube edge length, <InlineEquation equation="a" />, and the atomic radius R for FCC is: \\[ a = 2R\\sqrt{2}" title="" />
+
+
+<p>\newpage</p>
+<p>The body-centered cubic cell is another common metallic crystal structure. This structure contains atoms on all of the corners of the unit cell as well as one single atom in the center. This can be seen below, where the atom centers are represented by small blue spheres.</p>
+<p>The equation that relates teh cube length, <InlineEquation equation="a" /> and the atomic radius R for BCC is :</p>
+
+<DisplayEquation equation="a = \\frac{4R}{\\sqrt{3}}" title="" />
+
+
+<p>Recall from simple cubic:</p>
+
+<DisplayEquation equation="APF = \\frac{\\text{Total sphere volume}}{\\text{Total unit cell volume}}" title="" />
+
+<p>\newpage</p>
+<p>\textbf{Practice Problems:}</p>
+<Enumerate>
+
+    <Item>Show for body-centered cubic that the unit cell edge length <InlineEquation equation="a" /> and the atomic radius are related through <InlineEquation equation="a = \\frac{4R}{\\sqrt{3}}" /></Item>
+    <Item>Calculate the atomic packing factor of FCC</Item>
+    <Item>Draw the densest packed planes for FCC and BCC</Item>
+
+</Enumerate>
+
+</Layout>
