@@ -1,5 +1,5 @@
 ---
-const content = Astro.slots.default;
+const { equation } = Astro.props;
 ---
 
-<span set:html={`\\( ${content} \\)`} />
+<span set:html={`\\( ${equation} \\)`} />
