@@ -1,4 +1,6 @@
 ---
-const { equation } = Astro.props;
+let content = await Astro.slots.default();
+content = content.trim();
 ---
-{`\\( ${equation} \\)`}
+
+<span set:html={`\\( ${content} \\)`} />
