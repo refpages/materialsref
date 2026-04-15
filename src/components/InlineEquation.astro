@@ -1,6 +1,5 @@
 ---
-let content = await Astro.slots.default();
-content = content.trim();
+const content = Astro.slots.default;
 ---
 
 <span set:html={`\\( ${content} \\)`} />
