@@ -61,6 +61,42 @@ import DisplayEquation from "../../components/DisplayEquation.astro";
         <p>
         Using this information, we can use the table below to determine the crystal structure:
         </p>
+        <div class="table-responsive my-3">
+        <table class="table table-bordered text-center align-middle" id="tab-bravais-reflections">
+            <thead>
+            <tr>
+                <th>Bravais lattice</th>
+                <th>Constructive interference</th>
+                <th>Destructive interference</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td>Reflections present</td>
+                <td>Reflections absent</td>
+            </tr>
+            <tr>
+                <th scope="row">BCC</th>
+                <td>
+                <InlineEquation equation="(h+k+l)" /> is an even number
+                </td>
+                <td>
+                <InlineEquation equation="(h+k+l)" /> is an odd number
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">FCC</th>
+                <td>
+                <InlineEquation equation="h" />, <InlineEquation equation="k" />, <InlineEquation equation="l" /> all even or all odd
+                </td>
+                <td>
+                <InlineEquation equation="h" />, <InlineEquation equation="k" />, <InlineEquation equation="l" /> not all even or all odd
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
     </SubSection>
 
 
