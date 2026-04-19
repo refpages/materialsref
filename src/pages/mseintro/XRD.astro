@@ -131,7 +131,12 @@ import DisplayEquation from "../../components/DisplayEquation.astro";
     First, the magnification must be determined. This is done by measuring the scale bar given and dividing it by the magnification given.
     For example a 15 mm scale bar that measures 100 µm would be equal to 15,000 µm ÷ 100 µm = 150× magnification.
     Next draw 7–10 lines and measure the total length of the lines (i.e. 6 lines at 50 mm each would total 300 mm).
-
+    Finally plug all the numbers into the given equation{' '}
+    <InlineEquation equation={"\\ell = \\frac{L_{T}}{PM}"} />, where{' '}
+    <InlineEquation equation="\\ell" /> is the mean intercept length,{' '}
+    <InlineEquation equation={"L_{T}"} /> is the total line length,{' '}
+    <InlineEquation equation="M" /> is the magnification, and{' '}
+    <InlineEquation equation="P" /> is the total number of grain boundary intersections.
     </p>
     </SubSection>
 
