@@ -1,0 +1,93 @@
+---
+import Layout from "../../layouts/Layout.astro" 
+import Image from "../../components/Image.astro" 
+import CalloutContainer from "../../components/CalloutContainer.astro" 
+import Section from "../../components/Section.astro" 
+import SubSection from "../../components/SubSection.astro" 
+import SubSubSection from "../../components/SubSubSection.astro" 
+import SubSubSubSection from "../../components/SubSubSubSection.astro" 
+import OrangeText from "../../components/OrangeText.astro" 
+import TealText from "../../components/TealText.astro" 
+import Enumerate from "../../components/Enumerate.astro" 
+import Item from "../../components/Item.astro" 
+import Itemize from "../../components/Itemize.astro" 
+import InlineEquation from "../../components/InlineEquation.astro" 
+import DisplayEquation from "../../components/DisplayEquation.astro" 
+---
+<Layout title="7_Diffusion">
+<div slot="navtree">
+<ul class="list-group list-group-flush py-0">
+</li>
+</ul>
+</div>
+<p>\documentclass[12pt]{article}</p>
+<p>\geometry{margin=1in}</p>
+<p>\setstretch{1.2}</p>
+<p>\begin{center}</p>
+<p>\textbf{\LARGE MSE 280}\</p>
+<DisplayEquation equation="1em] \\textbf{\\Large Diffusion} \\end{center} Today we will go over how we apply diffusion in materials science. First, what is diffusion? We can demonstrate this phenomenon using something called a diffusion couple. This is what happens when you join two bars of different metals together. The process can be seen in the illustration below, where after some time the boundary between the two has been blurred. \\begin{center} <Image src='/COURSE/FigFolder/width=0.8\\textwidth]{Workshop Files/diffusion_images/Picture1.png' width='7'> Image caption</Image> \\end{center} One process that uses diffusion is called case hardening. An example we might look at is a steel case hardened gear. This is done by diffusing carbon atoms into iron atoms at the surface in order to make it harder. The diffusion causes the material to be hard to deform as the Carbon atoms “lock” the planes in place from shearing. It also makes the material difficult to crack as the atoms put the surface in compression. The carbon is just diffused a couple mm into the surface. Another example of diffusion is doping. This is used for semiconductors. For example, silicon is a very bad conductor, so we can deposit either phosphorus or boron onto the surface in order to change its electrical properties. Once it is heated, the Phosphorus or Boron layers diffuse into the silicon. Since diffusion is a time dependent process, we often want to find out how long something will take or the rate of mass transfer, diffusion flux. Fick’s first law represents something in steady-state, where the diffusion flux does not change with time: \\[ J = \\frac{M}{At} = \\frac{1}{A} \\frac{dM}{dt}" title="" />
+
+<p>where:</p>
+
+<DisplayEquation equation="\\begin{aligned} J &= \\text{Diffusion flux} \\\\ M &= \\text{Mass (\\# of atoms)} \\\\ A &= \\text{Cross-sectional area} \\\\ t &= \\text{Time} \\end{aligned}" title="" />
+
+<p>\textcolor{red}{Note: this only works for a thin material where the concentration on both sides</p>
+<p>are held constant. Many few things in the real world follow this. }</p>
+<p>Fick’s second law is used for non-steady state. Where the concentration is not fixed at both ends and can vary with time. Its more practical, seen above in case-hardening and the silicon doping. For this equation there are several conditions that must be met:</p>
+<Itemize>
+<p>[noitemsep]</p>
+    <Item>We must have a semi-infinite solid (the diffusing species never sees the end of the material) and it must have a fixed concentration</Item>
+    <Item>We must have a uniform C\textsubscript{0}, background concentration prior to diffusion</Item>
+    <Item>X goes from 0 to infinity (semi-infinite)</Item>
+    <Item>C = C\textsubscript{0} for all t</Item>
+    <Item>C = C\textsubscript{s} ax x=0 for all t (surface concentration)</Item>
+    <Item>C\textsubscript{x} = concentration at x at t</Item>
+
+</Itemize>
+<p>Yielding :</p>
+<DisplayEquation equation="\\frac{C_x - C_0}{C_S - C_0} = 1 - \\text{erf}\\left( \\frac{x}{2\\sqrt{Dt}} \\right)" title="" />
+
+<p>Where :</p>
+<DisplayEquation equation="D = D_0 \\exp\\left( \\frac{-Q_d}{RT} \\right)" title="" />
+
+
+<DisplayEquation equation="\\begin{aligned} D &= \\text{Diffusion coefficient} \\\\ D_0 &= \\text{Pre-exponential factor} \\\\ Q_d &= \\text{Activation energy} \\\\ R &= \\text{Gas constant} \\\\ T &= \\text{Temperature (K)} \\end{aligned}" title="" />
+
+<p>\newpage</p>
+<p>Some things to remember :</p>
+<p>\begin{minipage}{0.48\textwidth}</p>
+<p>\textbf{Diffusion is FASTER for:}</p>
+<Itemize>
+<p>[noitemsep]</p>
+    <Item>Open crystal structures</Item>
+    <Item>Lower melting temperature materials</Item>
+    <Item>Materials with secondary bonding</Item>
+    <Item>Smaller diffusing atoms</Item>
+    <Item>Lower density materials</Item>
+
+</Itemize>
+<p>\end{minipage}</p>
+<p>\hfill</p>
+<p>\begin{minipage}{0.48\textwidth}</p>
+<p>\textbf{Diffusion is SLOWER for:}</p>
+<Itemize>
+<p>[noitemsep]</p>
+    <Item>Close-packed structures</Item>
+    <Item>Higher melting temperature materials</Item>
+    <Item>Materials with covalent bonding</Item>
+    <Item>Larger diffusing atoms</Item>
+    <Item>Higher density materials</Item>
+
+</Itemize>
+<p>\end{minipage}</p>
+<p>\textbf{Practice Problems:}</p>
+<p>Boron atoms are to be diffused into a silicon wafer using both predeposition and drive-in heat treatments; the background concentration of B in this silicon material is known to be <InlineEquation equation="1 \\times 10^{20}" /> atoms/m\textsuperscript{3}. The predeposition treatment is to be conducted at 900\degree C for 30 min; the surface concentration of B is to be maintained at a constant level of <InlineEquation equation="3 \\times 10^{26}" /> atoms/m\textsuperscript{3}. Drive-in diffusion will be carried out at 1100\degree C for a period of 2 hours. For the diffusion coefficient of B in Si, values of Q\textsubscript{d} and D\textsubscript{0} are 3.87 eV/atom and <InlineEquation equation="2.4 \\times 10^{23}" /> m\textsuperscript{2}/s, respectively.</p>
+<Enumerate>
+
+    <Item>Calculate the value of \( Q_0 \)</Item>
+    <Item>Determine the value of \( x_i \) for the drive-in treatment</Item>
+    <Item>Determine the concentration of boron atoms at a position \( 1 \, \mu\text{m} \) below the surface</Item>
+
+</Enumerate>
+
+</Layout>
