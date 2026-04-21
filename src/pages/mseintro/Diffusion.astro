@@ -61,6 +61,14 @@ import DisplayEquation from "../../components/DisplayEquation.astro";
     Fick’s second law is used for non-steady state. Where the concentration is not fixed at both ends and can vary with time.
     Its more practical, seen above in case-hardening and the silicon doping. For this equation there are several conditions that must be met:
     </p>
+    <Itemize>
+        <Item>We must have a semi-infinite solid (the diffusing species never sees the end of the material) and it must have a fixed concentration.</Item>
+        <Item>We must have a uniform <InlineEquation equation="C_0" />, background concentration prior to diffusion.</Item>
+        <Item><InlineEquation equation="x" /> goes from 0 to infinity (semi-infinite).</Item>
+        <Item><InlineEquation equation="C = C_0" /> for all <InlineEquation equation="t" />.</Item>
+        <Item><InlineEquation equation="C = C_s \\text{ at } x=0 \\text{ for all } t" /> (surface concentration).</Item>
+        <Item><InlineEquation equation="C_x" /> = concentration at <InlineEquation equation="x" /> at <InlineEquation equation="t" />.</Item>
+    </Itemize>
     </SubSection>
     
 
