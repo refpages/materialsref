@@ -65,19 +65,23 @@ import Enumerate from "../../components/Enumerate.astro";
     <style>
     .wrap-left {
         float: left;
-        width: 28%;
-        max-width: 260px;
+        width: 40%;
         margin: 0 1rem 0.75rem 0;
     }
     .wrap-left img {
         display: block;
         width: 100%;
         height: auto;
-        max-height: 220px;
-        object-fit: contain;
     }
-    .after-wrap {
-        clear: left;
+    .clear-wrap {
+        clear: both;
+    }
+    @media (max-width: 900px) {
+        .wrap-left {
+        float: none;
+        width: 100%;
+        margin: 0 0 0.75rem 0;
+        }
     }
     </style>
 
