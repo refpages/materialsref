@@ -55,6 +55,13 @@ import Enumerate from "../../components/Enumerate.astro";
     <div class="wrap-left">
         <img src="/images/defects_im1.jpg" alt="Point defects illustration" />
     </div>
+    <p><strong>1. Vacancy</strong> -- This is when there are atoms missing from lattice sites which causes a distortion of planes and missing bonds. Vacancies have a high cost of energy that comes from thermal energy. <InlineEquation equation="Q_V" /> is the activation energy needed to form a vacancy. We can use the following equation to find the number of vacancies present:</p>
+    <DisplayEquation equation="N_v = N \, e^{-Q_v / kT}." />
+    <p>Where <InlineEquation equation="N_v" /> is the number of vacancies, <InlineEquation equation="N" /> is the number of lattice sites, and <InlineEquation equation="k" /> is the boltzmann constant.</p>
+    <p><strong>2. Interstitial Impurity</strong> -- Smaller atoms that fit into the vacancies between lattice atoms.</p>
+    <p><strong>3. Substitutional Impurity</strong> -- An atom of a different type replaces one of the bulk atoms. Sizes are usually similar.</p>
+    <p><strong>4. Self-interstitial</strong> -- An atom from the crystal is forced into a small void, distorting the surrounding lattice. Though rare, they follow the same equilibrium equation with a smaller activation energy: <InlineEquation equation="N_i = N \, e^{-Q_i / kT}" />.</p>
+    <div class="clear-wrap"></div>
 
 
 </Layout>
