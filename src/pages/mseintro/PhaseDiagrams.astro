@@ -83,6 +83,37 @@ import Enumerate from "../../components/Enumerate.astro";
     <p>
     As seen before in the one-component system of water, a melting point occurs at a very distinct line. Here, in a two-component system, the melting occurs over a range of temperatures, between the liquidus and solidus line. 
     </p>
+    <div class="phase-wrap">
+    <div class="phase-text">
+        <p>Here we can see the microstructures that we would find in each phase of the solution.</p>
+
+        <p>The first square corresponds to the region A, which is a polycrystalline solid solution.</p>
+
+        <p>The middle square represents region B, in between the solidus and liquidus line, and it is a mixture of liquid and crystallites of the solid solution.</p>
+
+        <p>The last square is region C, which is just the liquid solution.</p>
+    </div>
+
+    <img src="/images/Phase_im4.png" alt="Microstructures in regions A, B, and C" class="phase-image" />
+    </div>
+
+    <style>
+    .phase-wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .phase-text {
+        flex: 1;
+    }
+
+    .phase-image {
+        width: 25%;
+        min-width: 160px;
+        height: auto;
+    }
+    </style>
     </SubSection>
 
 
