@@ -64,28 +64,20 @@ import Enumerate from "../../components/Enumerate.astro";
     <div class="clear-wrap"></div>
     <style>
     .wrap-left {
-    float: left;
-    width: 28%;          /* was 40% */
-    max-width: 260px;    /* hard cap so it can't dominate */
-    margin: 0 1rem 0.75rem 0;
+        float: left;
+        width: 28%;
+        max-width: 260px;
+        margin: 0 1rem 0.75rem 0;
     }
-
     .wrap-left img {
-    display: block;
-    width: 100%;
-    max-height: 220px;   /* limit vertical size */
-    object-fit: contain; /* keep whole image visible */
-    height: auto;
-    }
-    .clear-wrap {
-        clear: both;
-    }
-    @media (max-width: 900px) {
-        .wrap-left {
-        float: none;
+        display: block;
         width: 100%;
-        margin: 0 0 0.75rem 0;
-        }
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+    }
+    .after-wrap {
+        clear: left;
     }
     </style>
 
