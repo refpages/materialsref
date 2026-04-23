@@ -173,19 +173,42 @@ import Enumerate from "../../components/Enumerate.astro";
     </p>
     <p>
     So how do we determine microstructure from these diagrams? We can determine them from where we are in the diagram:
-    </p>
-    \begin{wrapfigure}[8]{l}{0.4\textwidth}
-        \centering % Optional: centers the image within its allocated width
-        \includegraphics[width=\linewidth]{Workshop Files/PhaseDiagram/im6.png}
-    \end{wrapfigure}
+    </p> 
+    <div class="wrap-left">
+    <img src="/images/Phase_im6.png" alt="Phase diagram with points a, b, c" />
+    </div>
 
-    \par\noindent\hspace{0pt}
+    <p>a -- point a is completly in the liquid region</p>
+    <p>b -- point b is α--phase solids with liquid compositions. The exact mass fractions can be found using the lever rule.</p>
+    <p>c -- point c is in the α--solid area only</p>
 
-    a -- point a is completly in the liquid region 
+    <div class="clear-wrap"></div>
 
-    b -- point b is $\alpha$--phase solids with liquid compositions. The exact mass fractions can be found using the lever rule. 
+    <style>
+    .wrap-left {
+        float: left;
+        width: 33%;
+        margin: 0 1rem 0.75rem 0;
+    }
 
-    c -- point c is in the $\alpha$--solid area only    
+    .wrap-left img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .clear-wrap {
+        clear: both;
+    }
+
+    @media (max-width: 900px) {
+        .wrap-left {
+        float: none;
+        width: 100%;
+        margin: 0 0 0.75rem 0;
+        }
+    }
+    </style>
     </SubSection>
 
 
